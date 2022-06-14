@@ -1,0 +1,17 @@
+Durante as aulas sobre regressão apreendemos que podemos utilizar a métrica score para avaliar o desempenho de um algoritmo de regressão, juntamente com o cálculo do mean_absolute_error para comparar os resultados previstos com os resultados reais. Para uma correta avaliação de um algoritmo você pode seguir os mesmos passos apresentados nas aulas sobre classificação, ou seja:
+
+Utilizar validação cruzada ao invés de dividir a base em porções para treinamento e teste
+
+Executar pelo menos 30 testes com cada algoritmo, utilizando o valor retornado pelo score (opcionalmente você pode usar o mean_absolute_error)
+
+Construir a planilha com os resultados, calculando a média dos 30 testes de cada algoritmo
+
+Fazer os testes de Friedmann e Nemenyi para verificar se existe diferença estatística significativa entre os resultados
+
+Por fim, por meio dos resultados escolher o melhor algoritmo
+
+No módulo sobre classificação também foram apresentados os conceitos sobre combinação e rejeição de classificadores, que também podem ser utilizados para problemas de regressão. As diferenças são:
+
+Na combinação de regressores, você deve obter o valor da previsão numérica de cada algoritmo e calcular a média para calcular o valor final
+
+Na rejeição de regressores, você pode estipular um valor mínimo para o mean_absolute_error, e caso o valor previsto seja maior que esse parâmetro você pode ignorar a resposta do regressor
